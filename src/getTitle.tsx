@@ -1,7 +1,7 @@
 import React from 'react';
 
 type GetTitleProps = {
-    header: string,
+    header: number,
 }
 const App = (props: GetTitleProps) => {
     const { header } = props;
