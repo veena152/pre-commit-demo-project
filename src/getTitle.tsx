@@ -1,11 +1,9 @@
-import React from 'react';
-
 type GetTitleProps = {
-    header: number,
+    header: string,
 }
 const App = (props: GetTitleProps) => {
     const { header } = props;
-
+    console.log('header');
   return (
         <div>
             <h1>{header}</h1>

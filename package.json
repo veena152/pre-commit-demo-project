@@ -10,7 +10,6 @@
     "@types/node": "^16.11.56",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "husky": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -22,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:ts": "tslint --project tsconfig.json --config tslint.json"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -42,13 +41,8 @@
       "last 1 safari version"
     ]
   },
-  "lint-staged": {
-    "*.ts": "yarn lint:ts",
-    "*.tsx": "yarn lint:ts"
-  },
-  "husky": { 
-   "hooks": {
-      "pre-commit": "lint-staged"
-   }
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3"
   }
 }
